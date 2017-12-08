@@ -76,7 +76,7 @@ cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 cat > /etc/nginx/conf.d/default.conf<<EOF
 server {
     listen       80;
-    server_name  $$websiteurl www.$websiteurl;
+    server_name  $websiteurl www.$websiteurl;
 
     charset utf-8;
     #access_log  /var/log/nginx/host.access.log  main;
