@@ -8,7 +8,7 @@ export PATH
 #soft download dir 
 DIR=/usr/local/src
 
-read  -t 30  -p  "Are you sure want to install LNMP,please input y/n."  lnmp   
+read  -t 30  -p  "Are you sure want to install LNMP,please input y/n :  "  lnmp   
 
 if [ "$lnmp" == "y" ]
 then 
@@ -17,7 +17,7 @@ else
 exit
 fi
 
-read  -t 30  -p  "please input you website url default localhost "  websiteurl   
+read  -t 30  -p  "please input you website url default localhost :  "  websiteurl   
 
 if [ -z "$websiteurl" ]
 then 
@@ -25,7 +25,7 @@ then
 echo  "website url default localhost"
 fi
 
-read -t 30 -p  "please enter the mysql passwd.(Default password: root)"   mysqlrootpwd
+read -t 30 -p  "please enter the mysql passwd.(Default password: root) :  "   mysqlrootpwd
 
 if [  -z "$mysqlrootpwd"  ]
 then 
@@ -33,7 +33,7 @@ then
 echo  "MySQL root password:root"
 fi
 
-read -t 30 -p  "please enter the PHP version.(Default version: 7.2.0)"   phpversion
+read -t 30 -p  "please enter the PHP version.(Default version: 7.2.0) :  "   phpversion
 
 if [  -z "$phpversion"  ]
 then 
