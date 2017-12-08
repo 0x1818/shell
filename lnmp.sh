@@ -3,7 +3,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 #A tool to auto-compile & install Nginx+MySQL+PHP on Centos7 for laster stable version
-#BY:Mr lile  Date:2017/12/8    version:1.0
+#BY:Mr lile  WEBSITE=https://mrlile.com  Date:2017/12/9    version:1.0
 
 #soft download dir 
 DIR=/usr/local/src
