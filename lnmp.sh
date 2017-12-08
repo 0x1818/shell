@@ -8,13 +8,21 @@ export PATH
 #soft download dir 
 DIR=/usr/local/src
 
-read  -t 30  -p  "Are you sure want to install LNMP,please input Y/N."  lnmp   
+read  -t 30  -p  "Are you sure want to install LNMP,please input y/n."  lnmp   
 
 if [ "$lnmp" == "y" ]
 then 
 echo -e "lnmp will be install" >> /usr/local/src/lnmp.log
 else
 exit
+fi
+
+read  -t 30  -p  "please input you website url default localhost "  websiteurl   
+
+if [ -z "$websiteurl" ]
+then 
+                        $websiteurl="localhost"
+echo  "website url default localhost"
 fi
 
 read -t 30 -p  "please enter the mysql passwd.(Default password: root)"   mysqlrootpwd
@@ -68,7 +76,7 @@ cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 cat > /etc/nginx/conf.d/default.conf<<EOF
 server {
     listen       80;
-    server_name  localhost;
+    server_name  $$websiteurl www.$websiteurl;
 
     charset utf-8;
     #access_log  /var/log/nginx/host.access.log  main;
