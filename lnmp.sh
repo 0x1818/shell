@@ -21,7 +21,7 @@ read  -t 30  -p  "please input you website url default localhost :  "  websiteur
 
 if [ -z "$websiteurl" ]
 then 
-                        $websiteurl="localhost"
+                        websiteurl="localhost"
 echo  "website url default localhost"
 fi
 
