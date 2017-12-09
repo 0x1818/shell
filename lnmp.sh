@@ -49,6 +49,7 @@ yum -y autoremove mariadb*
 
 #delete mysql and nginx dir
 rm -rf /var/lib/mysql/
+rm-rf /etc/my.cnf
 rm -rf /etc/nginx/
 
 yum -y install epel-release.noarch
