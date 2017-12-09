@@ -47,6 +47,10 @@ yum -y autoremove php*
 yum -y autoremove mysql*
 yum -y autoremove mariadb*
 
+#delete mysql and nginx dir
+rm -rf /var/lib/mysql/
+rm -rf /etc/nginx/
+
 yum -y install epel-release.noarch
 
 yum -y install firewalld
