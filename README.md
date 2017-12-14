@@ -1,1 +1,5 @@
-lnmp.sh script is only installed  the latest stable version of nginx, latest stable version of mariadb-10.2.x, PHP can specify the default version of php-7.2.0, you can set website url without www,for example mrlile.com,default support mysql remote connection, in order to secure the firewall does not add remote connection 3306 port，default open 80 and 22 port.
+lnmp.sh 只安装nginx最新稳定版、mariadb-10.2.x最新稳定版、PHP可指定版本默认php-7.2.0，可以自定义网址，不需要带www，比如：mrlile.com，默认支持mysql远程连接，为了安全并没有在防火墙添加远程连接3306端口，默认开启22和80端口。
+
+lnmp_check.sh 脚本来自动检测php-fpm、mysql、nginx进程是否正常，设置15秒检测一次，如果进程出现问题则：自动重启进程。
+
+
