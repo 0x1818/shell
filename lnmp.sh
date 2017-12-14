@@ -212,7 +212,7 @@ echo "php conf file :     /usr/local/php/etc/php.ini"
 echo "nginx conf file :   /etc/nginx.conf and /etc/nginx/conf.d/"
 echo "web dir :     /usr/local/nginx/html"
 echo "The mysql root passwd is : $mysqlrootpwd" 
-echo "please input http://ip/info.php, to checkout the lnmp is working!!!"
+echo "please input http://$websiteurl/info.php, to checkout the lnmp is working!!!"
 echo "Enjoy it !"
 
 exit
