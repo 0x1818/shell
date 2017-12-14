@@ -56,7 +56,7 @@ yum -y install epel-release.noarch
 
 yum -y install firewalld
 
-yum -y install wget gcc gcc-c++ make cmake  perl autoconf automake libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel ncurses ncurses-devel curl curl-devel openssl openssl-devel pcre pcre-devel libtool  pcre-devel libaio-devel libaio bzip2-devel libcurl-devel gd-devel bison bison-devel  libmcrypt libmcrypt-devel
+yum -y install wget gcc gcc-c++ make cmake  perl autoconf automake libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel ncurses ncurses-devel curl curl-devel openssl openssl-devel pcre pcre-devel libtool  pcre-devel libaio-devel libaio bzip2-devel libcurl-devel gd-devel bison bison-devel  libmcrypt libmcrypt-devel libmcrypt libmcrypt-devel mcrypt mhash
 
 yum update  -y
 
