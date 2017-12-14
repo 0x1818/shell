@@ -7,6 +7,13 @@ if [ ! -x /usr/bin/nmap ];then
 yum install nmap -y
 
 fi
+
+if [ ! -x /usr/bin/crontab ];then
+
+yum install cronie -y
+systemctl restart crond
+
+fi
 mysql_value=$(/usr/bin/nmap -sT 127.0.0.1 |grep 3306 |awk '{print $2}')
 
 nginx_value=$(/usr/bin/nmap -sT 127.0.0.1 |grep 80 |awk '{print $2}')
