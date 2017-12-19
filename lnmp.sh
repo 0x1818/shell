@@ -56,7 +56,7 @@ yum -y install epel-release.noarch
 
 yum -y install firewalld
 
-yum -y install wget gcc gcc-c++ make cmake  perl autoconf automake libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel ncurses ncurses-devel curl curl-devel openssl openssl-devel pcre pcre-devel libtool  pcre-devel libaio-devel libaio bzip2-devel libcurl-devel gd-devel bison bison-devel  libmcrypt libmcrypt-devel libmcrypt libmcrypt-devel mcrypt mhash
+yum -y install wget gcc gcc-c++ make cmake  perl autoconf automake libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel ncurses ncurses-devel curl curl-devel openssl openssl-devel pcre pcre-devel libtool  pcre-devel libaio-devel libaio bzip2-devel libcurl-devel gd-devel bison bison-devel  libmcrypt libmcrypt-devel  mhash
 
 yum update  -y
 
@@ -161,7 +161,7 @@ sleep 5;
 cd $DIR
 cd php-$phpversion/
 
-./configure  --prefix=/usr/local/php --exec-prefix=/usr/local/php  --bindir=/usr/local/php/bin  --sbindir=/usr/local/php/sbin  --includedir=/usr/local/php/include --libdir=/usr/local/php/lib/php  --mandir=/usr/local/php/php/man  --with-config-file-path=/usr/local/php/etc  --with-mysql-sock=/var/lib/mysql/mysql.sock  --with-mcrypt  --with-mhash  --with-openssl  --with-mysqli=shared,mysqlnd  --with-pdo-mysql=shared,mysqlnd  --without-sqlite3 --without-pdo-sqlite --with-gd  --with-iconv  --with-zlib  --enable-zip  --enable-inline-optimization  --disable-debug  --disable-rpath  --enable-shared  --enable-xml  --enable-bcmath  --enable-shmop  --enable-sysvsem  --enable-mbregex  --enable-mbstring  --enable-ftp  --enable-gd-native-ttf  --enable-pcntl  --enable-sockets  --with-xmlrpc --enable-soap  --without-pear  --with-gettext  --enable-session  --with-curl  --with-jpeg-dir  --with-freetype-dir  --enable-opcache  --enable-fpm --with-fpm-user=nobody  --with-fpm-group=nobody  --without-gdbm  --enable-fast-install --disable-fileinfo && make && make install
+./configure  --prefix=/usr/local/php --exec-prefix=/usr/local/php  --bindir=/usr/local/php/bin  --sbindir=/usr/local/php/sbin  --includedir=/usr/local/php/include --libdir=/usr/local/php/lib/php  --mandir=/usr/local/php/php/man  --with-config-file-path=/usr/local/php/etc  --with-mysql-sock=/var/lib/mysql/mysql.sock  --with-mhash  --with-openssl  --with-mysqli=shared,mysqlnd  --with-pdo-mysql=shared,mysqlnd  --without-sqlite3 --without-pdo-sqlite --with-gd  --with-iconv  --with-zlib  --enable-zip  --enable-inline-optimization  --disable-debug  --disable-rpath  --enable-shared  --enable-xml  --enable-bcmath  --enable-shmop  --enable-sysvsem  --enable-mbregex  --enable-mbstring  --enable-ftp  --enable-pcntl  --enable-sockets  --with-xmlrpc --enable-soap  --without-pear  --with-gettext  --enable-session  --with-curl  --with-jpeg-dir  --with-freetype-dir  --enable-opcache  --enable-fpm --with-fpm-user=nobody  --with-fpm-group=nobody  --without-gdbm  --enable-fast-install --disable-fileinfo && make && make install
 
 if [  $? -ne 0 ]
 then
