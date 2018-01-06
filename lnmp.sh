@@ -127,7 +127,7 @@ gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 EOF
 
-yum install -y MariaDB-server MariaDB-client
+yum install -y MariaDB-server MariaDB-client MariaDB-devel  jemalloc
 
 systemctl start mysql
 
