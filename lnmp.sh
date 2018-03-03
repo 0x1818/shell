@@ -12,7 +12,7 @@ read  -t 30  -p  "Are you sure want to install LNMP,please input y/n :  "  lnmp
 
 if [ "$lnmp" == "y" ]
 then 
-echo -e "lnmp will be install" >> /usr/local/src/lnmp.log
+echo  "lnmp will be install"
 else
 exit
 fi
