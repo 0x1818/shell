@@ -41,7 +41,7 @@ then
 echo  "PHP version:7.2.0"
 fi
 
-
+yum -y autoremove nginx*
 yum -y autoremove httpd*
 yum -y autoremove php*
 yum -y autoremove mysql*
