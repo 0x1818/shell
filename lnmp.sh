@@ -136,6 +136,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '$mysqlrootpwd';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '$mysqlrootpwd';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY '$mysqlrootpwd';
 use mysql;
+select host,user,password from user;
 delete from user where password="";
 flush privileges;
 EOF
