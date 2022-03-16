@@ -1,6 +1,6 @@
 #!/bin/bash
 #Check mysql php nginx must be working.
-#BY:Mr Lile  Web:https://mrlile.com  date:2017/12/12 Version:1.0 beta
+#BY:0x1818   date:2017/12/12 Version:1.0 beta
 
 if [ ! -x /usr/bin/nmap ];then
 
