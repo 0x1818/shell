@@ -23,3 +23,5 @@ cd $BASH_PATH/php-$NEW_PHP_VERSION  && ./config.nice && make && make install
 rm -rf $BASH_PATH/php-$NEW_PHP_VERSION $BASH_PATH/php-$NEW_PHP_VERSION.tar.gz
 
 systemctl restart php-fpm
+
+exit
